@@ -1,0 +1,593 @@
+@media screen and (max-width: 1700px) {
+  .banner .hotel-right:before {
+    top: -81%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .banner .hotel-right:before {
+    top: -94%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .banner .hotel-right:before {
+    top: -100%;
+  }
+
+  .services {
+    margin-left: 0;
+  }
+
+  .service:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .promo .discount-desc__button button {
+    padding: 13px 30px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 991px) {
+  .banner .hotel-rating .rating-average, .banner .hotel-rating .rating-items > *, .banner .hotel-rating .rating-reviews, .banner .hotel-title > * {
+    margin-right: 10px;
+  }
+
+  .banner .hotel-rating {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner .hotel-rating .rating-reviews {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .banner .hotel-rating .rating-reviews span {
+    margin-left: 10px;
+  }
+
+  .rating {
+    font-size: 22px;
+  }
+
+  .banner .hotel-title > * {
+    margin-right: 15px;
+  }
+
+  .discount-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+
+  .promo .discount-desc {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-row {
+    padding: 20px 0;
+  }
+
+  .header-row__logo a .logo-image {
+    max-width: 140px;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .banner {
+    margin-top: 15px;
+  }
+  .banner-align {
+    padding: 20px;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-row__logo a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header-row__logo a .logo-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .header-row__phone a span {
+    display: none;
+  }
+
+  .order-mob2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .header-row__phone {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .header-row__social {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .header-row__logo a .logo-text {
+    margin-top: 5px;
+  }
+
+  .bg.desctop {
+    display: none;
+  }
+
+  .service-image {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .banner-wrapp {
+    position: relative;
+    padding-bottom: 45%;
+  }
+
+  .bg.desktop {
+    display: none;
+  }
+
+  .bg.mobile {
+    display: block;
+  }
+
+  .banner-inner {
+    height: auto;
+    background-color: rgb(255, 242, 0);
+  }
+
+  .banner-align {
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+    max-width: 100%;
+    border-radius: 0;
+    background: none;
+    bottom: 0;
+    left: 0;
+  }
+
+  .banner .tour-code {
+    margin-top: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .tour-code span {
+    margin-left: 5px;
+    margin-top: -4px;
+  }
+
+  .banner .hotel-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .banner .hotel-right:before {
+    content: none;
+  }
+
+  .banner .hotel-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .banner .hotel-promo {
+    margin-right: 0;
+    max-width: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .banner .hotel-promo span {
+    margin-right: 10px;
+  }
+
+  .blog-sm-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .blog {
+    margin-top: 30px;
+  }
+
+  .factoid {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .simple-page > * {
+    margin-bottom: 16px;
+  }
+
+  .simple-page blockquote {
+    margin-left: 26px;
+    margin-bottom: 16px;
+  }
+
+  .simple-page table {
+    padding: 0;
+  }
+
+  .simple-page ul li {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-row__social .social-item a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-row__social .social-item a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .services {
+    margin-bottom: -20px;
+  }
+
+  .promo .discount-desc__promocode {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .promo-top {
+    padding: 25px 12px 0;
+  }
+
+  .promo .discount-desc__button button {
+    width: 100%;
+  }
+
+  .simple-page table td, .simple-page table thead tr th {
+    padding: 16px 6px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header-row > * {
+    margin-bottom: 10px;
+  }
+
+  .header-row > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-row__social .social-item {
+    margin-right: 12px;
+  }
+
+  .banner-align {
+    padding: 15px 0;
+  }
+
+  .banner .tour-code {
+    margin-top: 5px;
+  }
+  .banner .tour-code span {
+    padding: 2px 5px;
+  }
+
+  .banner .hotel-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner-bottom {
+    margin-top: 15px;
+  }
+
+  .banner .hotel-title > * {
+    margin-right: 0;
+  }
+
+  .banner .hotel-promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .banner .hotel-promo span {
+    margin-right: 0;
+  }
+
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .footer-social {
+    margin-bottom: 10px;
+  }
+  .footer-social .social-item {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+  .footer-social .social-item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-desc {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 478px) {
+  .service {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .banner .hotel-rating .rating-desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner .hotel-rating .rating-average {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner .hotel-rating {
+    margin-top: 10px;
+  }
+
+  .simple-page blockquote {
+    margin-left: 18px;
+  }
+
+  .simple-page blockquote:before {
+    width: 6px;
+    left: -17px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .item-animation .animate-img {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item-animation .animate-item {
+    -o-transition: opacity 3s, visibility 3s;
+    transition: opacity 3s, visibility 3s;
+    -webkit-transition: opacity 3s, visibility 3s;
+  }
+
+  .item-animation .animate-item.animated {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .banner-wrapp {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    height: 0;
+  }
+
+  .loaded .banner-wrapp {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 100%;
+  }
+
+  .header {
+    opacity: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+  }
+
+  .loaded .header {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .item-animation .animate-item.to-right {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-150px);
+        -ms-transform: translateX(-150px);
+            transform: translateX(-150px);
+    -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    -o-transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s, -webkit-transform 1s;
+    -webkit-transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .item-animation .animate-item.to-right.animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .item-animation .animate-item.to-left {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(150px);
+        -ms-transform: translateX(150px);
+            transform: translateX(150px);
+    -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    -o-transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s, -webkit-transform 1s;
+    -webkit-transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .item-animation .animate-item.to-left.animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .item-animation .animate-item.to-down {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+    -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    -o-transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s;
+    transition: opacity 1s, visibility 1s, transform 1s, -webkit-transform 1s;
+    -webkit-transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .item-animation .animate-item.to-down.animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .item-animation .animate-item.img-todown {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+  }
+
+  .item-animation .animate-item.img-todown.animated {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .item-animation .animate-item.img-toup {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+  }
+
+  .item-animation .animate-item.img-toup.animated {
+    -webkit-clip-path: ppolygon(0 100%, 100% 100%, 100% 0, 0 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+
+  .item-animation .animate-item.img-toleft {
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+  }
+
+  .item-animation .animate-item.img-toleft.animated {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+
+  .item-animation .animate-item.img-toright {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    -webkit-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    -o-transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+    transition: clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95), -webkit-clip-path 1s cubic-bezier(0.35, 0.5, 0.64, 0.95);
+  }
+
+  .item-animation .animate-item.img-toright.animated {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}

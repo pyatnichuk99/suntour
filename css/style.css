@@ -1,0 +1,893 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial.eot");
+  src: url("../fonts/Arial.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial.woff") format("woff"), url("../fonts/Arial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial-Bold.eot");
+  src: url("../fonts/Arial-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-Bold.woff") format("woff"), url("../fonts/Arial-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-Italic.woff") format("woff"), url("../fonts/Arial-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("../fonts/TrebuchetMS-Bold.eot");
+  src: url("../fonts/TrebuchetMS-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TrebuchetMS-Bold.woff") format("woff"), url("../fonts/TrebuchetMS-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {
+  background: #F7F7F7;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {
+  background: #008BAA;
+}
+
+h1, .h1 {
+  font-size: clamp(32px, 5vw - 1rem, 47px);
+  line-height: 130%;
+  margin: 0;
+}
+
+h2, .h2 {
+  font-size: clamp(18px, 5vw - 1rem, 22px);
+  line-height: 130%;
+  margin: 0;
+}
+
+h3, .h3 {
+  font-size: clamp(14px, 5vw - 1rem, 16px);
+  line-height: 130%;
+  margin: 0;
+}
+
+p, .text {
+  font-size: 14px;
+  line-height: 120%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Arial";
+  font-weight: 400;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.container {
+  max-width: 1072px;
+  height: 100%;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  background-color: #008BAA;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  display: block;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+.header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 36px 0;
+}
+.header-row__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-row__logo a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+}
+.header-row__logo a .logo-image {
+  max-width: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  font-size: 0;
+}
+.header-row__logo a .logo-text {
+  font-family: "Arial";
+  font-size: clamp(14px, 5vw - 1rem, 16px);
+  line-height: 18px;
+  margin-left: 22px;
+}
+.header-row__phone a {
+  font-size: clamp(16px, 5vw - 1rem, 30px);
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-row__phone a span {
+  font-size: clamp(14px, 5vw - 1rem, 16px);
+  line-height: 18px;
+  font-weight: 400;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  margin-left: 8px;
+}
+.header-row__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-row__social .social-item {
+  margin-right: 15px;
+}
+.header-row__social .social-item a {
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.header-row__social .social-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 991px) {
+  .header-row__logo a:hover, .header-row__social a:hover {
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+    opacity: 0.8;
+  }
+
+  .header-row__phone a:hover {
+    color: #FFF200;
+  }
+}
+.bg {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg.rellax {
+  height: 120%;
+}
+
+.bg.mobile {
+  display: none;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+  border-radius: 6px;
+  z-index: -1;
+}
+.banner-align {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  background-color: rgba(255, 242, 0, 0.7);
+  max-width: 250px;
+  height: 250px;
+  padding: 45px 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "TrebuchetMS";
+  font-weight: bold;
+  opacity: 0;
+}
+.banner-align.open {
+  height: auto;
+  -webkit-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.banner .tour-city {
+  font-size: clamp(20px, 5vw - 1rem, 25px);
+  line-height: 30px;
+}
+.banner .tour-code {
+  text-transform: uppercase;
+  font-size: clamp(14px, 5vw - 1rem, 16px);
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px;
+}
+.banner .tour-code span {
+  margin-top: 7px;
+  color: #FFFFFF;
+  background-color: #000;
+  font-size: clamp(14px, 5vw - 1rem, 24px);
+  line-height: 28px;
+  padding: 5px;
+}
+.banner-bottom {
+  margin-top: 25px;
+}
+.banner .hotel-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "TrebuchetMS";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner .hotel-title > * {
+  margin-right: 20px;
+}
+.banner .hotel-title > *:last-child {
+  margin-right: 0;
+}
+.banner .hotel-name {
+  font-size: clamp(20px, 5vw - 1rem, 35px);
+  line-height: 130%;
+  font-weight: bold;
+  position: relative;
+}
+.banner .hotel-name:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: -1px;
+}
+.banner .hotel-price {
+  font-size: clamp(20px, 5vw - 1rem, 35px);
+  line-height: 130%;
+  font-weight: bold;
+  position: relative;
+}
+.banner .hotel-rating {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner .hotel-rating .rating {
+  font-family: "Arial";
+  font-weight: 400;
+}
+.banner .hotel-rating .rating-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner .hotel-rating .rating-reviews {
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 32px;
+}
+.banner .hotel-rating .rating-reviews span {
+  font-weight: bold;
+}
+.banner .hotel-rating .rating-average {
+  font-weight: bold;
+  font-family: "TrebuchetMS";
+  font-size: clamp(16px, 5vw - 1rem, 24px);
+  padding: 12px 7px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  background-color: #008BAA;
+  margin-right: 24px;
+  width: auto;
+}
+.banner .hotel-rating .rating-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner .hotel-rating .rating-items > * {
+  margin-right: 16px;
+}
+.banner .hotel-rating .rating-items > *:last-child {
+  margin-right: 0;
+}
+.banner .hotel-rating .rating-item {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.banner .hotel-rating .rating-item span {
+  font-size: clamp(16px, 5vw - 1rem, 18px);
+  line-height: 1.2;
+  font-weight: bold;
+}
+.banner .hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+.banner .hotel-right:before {
+  background: url("../img/promo-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  z-index: 20;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -61%;
+  width: 100%;
+  right: 0;
+}
+.banner .hotel-promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -24px;
+  font-weight: 400;
+  margin-right: 90px;
+  max-width: 144px;
+  line-height: 1;
+  font-size: clamp(18px, 5vw - 1rem, 30px);
+}
+.banner .hotel-promo span {
+  color: #777777;
+  font-weight: bold;
+  font-size: clamp(40px, 5vw - 1rem, 88px);
+  font-family: "TrebuchetMS";
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.services {
+  margin-top: 48px;
+  margin-left: -24px;
+}
+
+.service:nth-child(odd) {
+  padding-left: 16px;
+}
+.service-image {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 0;
+  margin-bottom: 24px;
+}
+.service-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.service-desc__title, .service-desc__price {
+  font-family: "TrebuchetMS";
+  font-weight: 700;
+  font-size: clamp(18px, 5vw - 1rem, 35px);
+  line-height: 1.3;
+  color: #000000;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.service-desc__title:before, .service-desc__price:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+  bottom: 2px;
+  left: 0;
+}
+.service-desc__minor {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 6px;
+  color: #000000;
+}
+.service-desc__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.service-desc__price:before {
+  content: none;
+}
+.service-desc__price .price-old {
+  color: #777777;
+  font-size: clamp(14px, 5vw - 1rem, 20px);
+  font-weight: 400;
+  position: relative;
+  padding: 0 3px;
+}
+.service-desc__price .price-old:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #CB0000;
+}
+.service-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 991px) {
+  .service a:hover .service-image img {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .service a:hover .service-desc__title {
+    color: #CB0000;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .service a:hover .service-desc__title:before {
+    background-color: rgba(203, 0, 0, 0.25);
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+}
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo {
+  margin-top: 50px;
+}
+.promo-top {
+  width: 100%;
+  padding: 35px 12px 0;
+}
+.promo-block {
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.promo .discount {
+  font-size: clamp(20px, 5vw - 1rem, 28px);
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Arial";
+  font-weight: bold;
+  color: #008BAA;
+}
+.promo .discount-desc__promocode {
+  color: #008BAA;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.promo .discount-desc__title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.promo .discount-desc__minor {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.promo .discount-desc__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.promo .discount-desc__button button {
+  border-radius: 24px;
+  text-align: center;
+  padding: 13px 42px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+  z-index: 1;
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00AAAA), to(#008BAA));
+  background: -o-linear-gradient(top, #00AAAA 0%, #008BAA 100%);
+  background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+}
+.promo .discount-desc__button button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: none;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00AAAA), to(#008BAA));
+  background: -o-linear-gradient(top, #00AAAA 0%, #008BAA 100%);
+  background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+  z-index: -1;
+  opacity: 0;
+}
+.promo .discount-desc__button button:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008BAA), to(#00AAAA));
+  background: -o-linear-gradient(top, #008BAA 0%, #00AAAA 100%);
+  background: linear-gradient(180deg, #008BAA 0%, #00AAAA 100%);
+}
+.promo-bottom {
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #E0E0E0;
+  padding: 16px 0;
+  margin-top: 35px;
+}
+.promo-bottom a {
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  position: relative;
+}
+.promo-bottom a:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: -20px;
+  top: 1.5px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #777777;
+  border-top: 2px solid #777777;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.promo-bottom a:hover {
+  color: #008BAA;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.promo-bottom a:hover::before {
+  border-color: #008BAA;
+}
+
+.blog {
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.simple-page > * {
+  margin-bottom: 24px;
+}
+.simple-page > *:last-child {
+  margin-bottom: 0;
+}
+.simple-page h2, .simple-page h3 {
+  margin-bottom: 8px;
+}
+.simple-page h1 {
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.simple-page blockquote {
+  font-style: italic;
+  line-height: 1.2;
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+  margin-left: 72px;
+  padding: 10px 0;
+}
+.simple-page blockquote:before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 100%;
+  top: 0;
+  left: -24px;
+  display: block;
+  background: #008BAA;
+}
+.simple-page table {
+  width: 100%;
+  border-spacing: 0;
+  padding: 16px;
+}
+.simple-page table thead tr {
+  background-color: #F7F7F7;
+  text-align: left;
+}
+.simple-page table thead tr th {
+  padding: 20px 8px;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.simple-page table tbody tr td {
+  border-bottom: 1px solid #E0E0E0;
+}
+.simple-page table tbody tr:last-child td {
+  border: none;
+}
+.simple-page table td {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  padding: 20px 8px;
+}
+.simple-page ul {
+  padding-left: 30px;
+}
+.simple-page ul li {
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.simple-page ul li:last-child {
+  margin-bottom: 0;
+}
+
+.factoid {
+  margin-top: 354px;
+}
+.factoid-count {
+  color: #777777;
+  font-weight: bold;
+  font-size: clamp(50px, 5vw - 1rem, 100px);
+  font-family: "TrebuchetMS";
+  letter-spacing: -0.05em;
+  line-height: 1.16;
+  margin-bottom: 4px;
+}
+.factoid-title {
+  font-size: clamp(18px, 5vw - 1rem, 30px);
+  font-family: "Arial";
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.factoid-text {
+  font-size: clamp(18px, 5vw - 1rem, 20px);
+  font-family: "Arial";
+  font-weight: 400;
+  line-height: 1.1;
+  color: #777777;
+}
+
+.footer-block {
+  padding: 16px 0;
+  border-top: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-desc {
+  font-size: 12px;
+  line-height: 1.2;
+}
+.footer-desc a {
+  color: #0059AC;
+  border-bottom: 1px solid rgba(0, 89, 172, 0.25);
+}
+.footer-desc a:hover {
+  opacity: 0.8;
+}
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.footer-social .social-item {
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.footer-social .social-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 991px) {
+  .social-item a:hover {
+    opacity: 0.8;
+  }
+}
